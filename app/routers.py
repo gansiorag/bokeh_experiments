@@ -1,6 +1,5 @@
 from flask import render_template, flash, redirect, url_for
 from app import app
-from easybase import get
 from bokeh.models import ColumnDataSource, Select, Slider, DataTable, DateFormatter, TableColumn
 from bokeh.resources import INLINE
 from bokeh.embed import components
@@ -9,8 +8,7 @@ from bokeh.layouts import column, row
 from bokeh.models.callbacks import CustomJS
 from datetime import date
 from random import randint
-from app import graf
-from Analiz_grafa import get_no_work_count
+
 from my_lib_work.user_full_func import get_list
 from app.cod_callback import simple_table
 
